@@ -4,11 +4,11 @@ import './../styles/App.css';
 const App = () => {
   const [name, setName] = useState('');
   const handleNameChange = (event) => {
-    setName(event.target.value);
+    setName(event.target.value); 
   };
   return (
     <div>
-      <p>Enter your name:</p>
+      {/* <p>Enter your name:</p> */}
       <label>
         <input type="text" value={name} onChange={handleNameChange} />
       </label>
