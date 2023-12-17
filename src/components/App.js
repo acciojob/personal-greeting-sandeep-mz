@@ -1,14 +1,11 @@
 
 import React, {useState} from "react";
 import './../styles/App.css';
-
-
 const App = () => {
   const [name, setName] = useState('');
   const handleNameChange = (event) => {
     setName(event.target.value);
   };
-
   return (
     <div>
       <h2>Enter your name:</h2>
@@ -26,5 +23,4 @@ const App = () => {
     </div>
   )
 }
-
 export default App
