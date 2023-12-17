@@ -8,7 +8,7 @@ const App = () => {
   };
   return (
     <div>
-      <h2>Enter your name:</h2>
+      <p>Enter your name:</p>
       <label>
         <input
           type="text"
