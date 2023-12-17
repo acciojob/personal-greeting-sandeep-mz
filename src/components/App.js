@@ -10,16 +10,9 @@ const App = () => {
     <div>
       <p>Enter your name:</p>
       <label>
-        <input
-          type="text"
-          value={name}
-          onChange={handleNameChange}
-          // placeholder="Enter your name"
-        />
+        <input type="text" value={name} onChange={handleNameChange} />
       </label>
-      {name && (
-        <p>Hello {name}!</p>
-      )}
+      {name && ( <p>Hello {name}!</p> )}
     </div>
   )
 }
