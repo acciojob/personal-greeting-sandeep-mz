@@ -8,7 +8,6 @@ const App = () => {
   };
   return (
     <div>
-      {/* <p>Enter your name:</p> */}
       <label>
         <input type="text" value={name} onChange={handleNameChange} />
       </label>
