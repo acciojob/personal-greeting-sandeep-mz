@@ -1,18 +1,19 @@
 
-import React, {useState} from "react";
+import React, { useState } from "react";
 import './../styles/App.css';
+
 const App = () => {
-  const [name, setName] = useState('');
-  const handleNameChange = (event) => {
-    setName(event.target.value); 
+  const [name, setName] = useState("");
+  function handleNameChange(event){
+    setName("Hello " + event.target.value +"!");
   };
+
   return (
     <div>
-      <label>
-        <input type="text" value={name} onChange={handleNameChange} />
-      </label>
-      {name && ( <p>Hello {name}!</p> )}
+        <input onChange={handleNameChange} />
+      <p>{name}</p>
     </div>
-  )
-}
-export default App
+  );
+};
+
+export default App;
